@@ -88,3 +88,17 @@ body{
         transform: translateX(0);
     }
 } 
+
+@media (max-width: 500px) {
+    .page h1 {
+        font-size: 1.8rem;
+    }
+    .page p {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+} 
+ 
