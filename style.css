@@ -1,30 +1,34 @@
-:root{
-    --page-1-color:steelblue;
-    --page-2-color:lightcoral;
-    --page-3-color:teal;
-    --page-4-color:slateblue;
+:root {
+    --page-1-color: steelblue;
+    --page-2-color: lightcoral;
+    --page-3-color: teal;
+    --page-4-color: slateblue;
     --animate-speed: 2s;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
     color: #fff;
     margin: 0;
     padding: 0;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 /* Page color  */
-#page-1{
+#page-1 {
     background: var(--page-1-color);
 }
-#page-2{
+
+#page-2 {
     background: var(--page-2-color);
 }
-#page-3{
+
+#page-3 {
     background: var(--page-3-color);
 }
-#page-4{
+
+#page-4 {
     background: var(--page-4-color);
 }
 
@@ -37,15 +41,18 @@ body{
     text-align: center;
     padding: 0 4rem;
 }
+
 .page h1 {
     font-size: 4rem;
     line-height: 1.2;
     margin: 1rem;
 }
+
 .page p {
     font-size: 1.3rem;
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 1rem 2rem;
     background: #f4f4f4;
@@ -56,11 +63,13 @@ body{
     font-size: 1.1rem;
     transition: all 0.3s ease-in;
 }
+
 .btn:hover,
 .btn-dark {
     background: #333;
     color: #fff;
 }
+
 .btn-dark:hover {
     background: #f4f4f4;
     color: #333;
@@ -70,8 +79,9 @@ body{
 /* Page Animation  */
 #page-1 h1 {
     transform: translateY(-1500px);
-    animation: heading var(--animate-speed)forwards ease-in ;
+    animation: heading var(--animate-speed)forwards ease-in;
 }
+
 #page-1 p {
     transform: translateX(-1800px);
     animation: paragraph var(--animate-speed) forwards ease-in 1s;
@@ -79,26 +89,30 @@ body{
 
 /* Keyframe  */
 @keyframes heading {
-    to{
+    to {
         transform: translateY(0);
     }
 }
+
 @keyframes paragraph {
-    to{
+    to {
         transform: translateX(0);
     }
-} 
+}
+
+/* Ressponsiveness  */
 
 @media (max-width: 500px) {
     .page h1 {
         font-size: 1.8rem;
     }
+
     .page p {
         font-size: 1rem;
     }
+
     .btn {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
     }
-} 
- 
+}
